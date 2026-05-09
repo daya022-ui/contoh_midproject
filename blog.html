@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog · Nurhidayah Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  </head>
+<body>
+
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">NR<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="blog.html" class="nav-link active">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="theme-icon">☾</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header">
+    <div class="container">
+      <span class="section-label reveal">Pikiran &amp; Cerita</span>
+      <h1 class="page-title reveal delay-1">Blog</h1>
+      <p class="page-subtitle reveal delay-2">Menulis tentang desain, teknologi, dan perjalanan hidup</p>
+    </div>
+  </header>
+<section class="blog-section section">
+  <div class="container">
+    
+    <article class="article-featured reveal" data-tags='["AI", "Tech"]'>
+      <div class="featured-content">
+        <div class="featured-text">
+          <span class="category-label">Top Insight</span>
+          <h2 class="featured-title">AI and the Future of Work: How Business is Changing</h2>
+          <p class="article-meta">Source: IBM Think | 2026 Analysis</p>
+          <p class="featured-excerpt">
+            Kecerdasan buatan bukan menggantikan manusia, melainkan mengubah cara kita bekerja. Pelajari bagaimana sinergi antara AI dan tenaga kerja manusia menciptakan efisiensi baru.
+          </p>
+          <a href="https://www.ibm.com/think/insights/ai-and-the-future-of-work" target="_blank" class="read-more-btn">Read Full Insights →</a>
+        </div>
+        <div class="featured-media">
+          <img src="img/AI.jpg" alt="AI and Work">
+        </div>
+      </div>
+    </article>
+
+    <hr class="section-divider">
+
+    <article class="article-minimal reveal" data-tags='["AI", "Life"]'>
+      <div class="minimal-content">
+        <span class="category-label">Education</span>
+        <h2 class="minimal-title">Apakah Mahasiswa Masih Perlu Belajar Coding di Era Generative AI?</h2>
+        <p class="minimal-excerpt">Di era ChatGPT, apakah logika pemrograman masih relevan? Temukan alasan mengapa fondasi coding tetap menjadi senjata utama mahasiswa IT.</p>
+        <a href="https://binus.ac.id/bekasi/2026/02/" target="_blank" class="read-more-link">BACA SELENGKAPNYA →</a>
+      </div>
+    </article>
+
+    <div class="video-featured-wrap reveal">
+      <div class="video-info">
+        <h3>Video Highlight: Roadmap to Machine Learning</h3>
+        <p>Tonton panduan visual ini untuk memahami alur belajar ML dari nol.</p>
+      </div>
+      <div class="video-responsive">
+        <iframe 
+            src="https://www.youtube.com/embed/7IgVGSaQPaw" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+          </iframe>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <div class="articles-sub-grid">
+      
+      <article class="article-card reveal" data-tags='["Tech"]'>
+        <div class="article-thumb">
+          <img src="img/MLvs-DL.jpg" alt="ML vs DL">
+        </div>
+        <div class="article-body">
+          <div class="article-meta">AWS Comparison</div>
+          <h2 class="article-title">Machine Learning vs Deep Learning</h2>
+          <p class="article-excerpt">Panduan memahami perbedaan struktur dan penggunaan antara ML dan DL.</p>
+          <a href="https://aws.amazon.com/id/compare/..." target="_blank" class="read-more-btn">BACA →</a>
+        </div>
+      </article>
+
+      <article class="article-card reveal delay-1" data-tags='["Tech"]'>
+        <div class="article-thumb">
+          <img src="img/FullStack.jpg" alt="Full Stack">
+        </div>
+        <div class="article-body">
+          <div class="article-meta">Career Guide</div>
+          <h2 class="article-title">Belajar Menjadi Full Stack Developer</h2>
+          <p class="article-excerpt">Teknologi yang wajib kamu kuasai untuk menjadi pengembang web profesional.</p>
+          <a href="https://glints.com/id/..." target="_blank" class="read-more-btn">BACA →</a>
+        </div>
+      </article>
+
+      <article class="article-card reveal delay-2" data-tags='["Design"]'>
+        <div class="article-thumb">
+          <img src="img/UI-UX.jpg" alt="UI/UX">
+        </div>
+        <div class="article-body">
+          <div class="article-meta">Step-by-Step</div>
+          <h2 class="article-title">7 Langkah Menjadi UI/UX Designer</h2>
+          <p class="article-excerpt">Langkah praktis memulai karir di bidang desain produk digital.</p>
+          <a href="https://www.dicoding.com/blog/..." target="_blank" class="read-more-btn">BACA →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">Nurhidayah R<span class="dot">.</span></span>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i data-feather="instagram"></i></a>
+          <a href="#" class="social-icon"><i data-feather="linkedin"></i></a>
+          <a href="#" class="social-icon"><i data-feather="github"></i></a>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; 2026 Nurhidayah Ramadhani. Dibuat dengan ♥</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>feather.replace();</script>
+</body>
+</html>

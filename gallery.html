@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery · Nurhidayah Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="gallery.html" class="nav-logo">NR<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="theme-icon">☾</span>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <span class="section-label reveal">Koleksi Visual</span>
+      <h1 class="page-title reveal delay-1">Gallery</h1>
+      <p class="page-subtitle reveal delay-2">Momen, proyek, dan perspektif dalam satu frame</p>
+    </div>
+  </header>
+
+  <!-- FILTER BAR -->
+  <section class="gallery-section section">
+    <div class="container">
+      <div class="filter-bar reveal">
+        <button class="filter-btn active" data-filter="all">Semua</button>
+        <button class="filter-btn" data-filter="Project">Project</button>
+        <button class="filter-btn" data-filter="Campus">Campus Life</button>
+        <button class="filter-btn" data-filter="Friends">Friends</button>
+      </div>
+
+      <!-- MASONRY GRID -->
+      <div class="masonry-grid" id="masonryGrid">
+
+        <!-- Galerry Project -->
+        <div class="masonry-item" data-category="Project" data-src="img/Project_1.png" data-desc="Mendeteksi kerusakan pada dinding bangunan seperti dinding rusak, berjamur dan berlumur, noda, retak, dan cat terkelupas menggunakan 3 Arsitektur CNN (Convolutional Neural Network) yaitu Resnet-50, EfficientNet-B0, dan MobileNetV3-Large.">
+          <div class="masonry-img" style="--h: 320px;"><img src="img/Project_1.png" alt="Deep Learning"></div>
+          <div class="masonry-overlay"><span>Project</span><h3>Deep Learning</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Project" data-src="img/Project_2.png" data-desc="Menganalisis data tangkapan dan budidaya ikan tuna di daerah Sulawesi Utara untuk memonitoring produksi penangkapan dan budidaya ikan tuna.">
+          <div class="masonry-img" style="--h: 300px;"><img src="img/Project_2.png" alt="Machine Learning"></div>
+          <div class="masonry-overlay"><span>Project</span><h3>Machine Learning</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Project" data-src="img/Project_3.png" data-desc="Buku digital mengenai cara monitoring kualitas air laut mengunakan teknologi IoT berdasarkan data dari sensor, seperti sensor suhu, pH, dan salinitas.">
+          <div class="masonry-img" style="--h: 280px;"><img src="img/Project_3.png" alt="Internet of Things"></div>
+          <div class="masonry-overlay"><span>Project</span><h3>Internet of Things</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Project" data-src="img/Project_4.png" data-desc="Website interaktif untuk mengkonversi satuan-satuan suhu.">
+          <div class="masonry-img" style="--h: 320px;"><img src="img/Project_4.png" alt="Deep Learning"></div>
+          <div class="masonry-overlay"><span>Project</span><h3>Web Development</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Project" data-src="img/Project_5.png" data-desc="Sistem manajemen stok retail di toko rahmat indah, untuk lebih memudahkan dalam monitoring penjualan, stok, dan pelanggan.">
+          <div class="masonry-img" style="--h: 280px;"><img src="img/Project_5.png" alt="Deep Learning"></div>
+          <div class="masonry-overlay"><span>Project</span><h3>Web Development</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Project" data-src="img/Project_6.png" data-desc="Dashboard analisis penjualan per hari, per bualn dan per tahun dengan menggunakan data historis yang terintegrasikan.">
+          <div class="masonry-img" style="--h: 340px;"><img src="img/Project_6.png" alt="Deep Learning"></div>
+          <div class="masonry-overlay"><span>Project</span><h3>Data Warehouse</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Project" data-src="img/Project_7.png" data-desc="Website interaktif mengenai Sulawesi Utara, terdiri dari tempat wisata yang bisa dikunjungi, makanan khas daerah dan juga kebudayaan daerah sulawesi utara, dilengkapi juga dengan titik lokasi dan review dari pengunjung agar lebih memudahkan pengguna.">
+          <div class="masonry-img" style="--h: 340px;"><img src="img/Project_7.png" alt="Deep Learning"></div>
+          <div class="masonry-overlay"><span>Project</span><h3>Web Development</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Project" data-src="img/Project_8.png" data-desc="Website untuk memprediksi tingkat depresi seseorang berdasarkan gaya hidup dengan menggunakan algoritma machine learning logistic regression.">
+          <div class="masonry-img" style="--h: 340px;"><img src="img/Project_8.png" alt="Deep Learning"></div>
+          <div class="masonry-overlay"><span>Project</span><h3>Machine Learning</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Project" data-src="img/Project_9.png" data-desc="Tabungan otomatis dengan deteksi warna uang menggunakan arduino uno dengan sensor tcs3200.">
+          <div class="masonry-img" style="--h: 340px;"><img src="img/Project_9.png" alt="Deep Learning"></div>
+          <div class="masonry-overlay"><span>Project</span><h3>Internet of Things</h3></div>
+        </div>
+        
+        <!-- Galerry Organisasi  -->
+        <div class="masonry-item" data-category="Campus" data-src="img/kampus1.jpg">
+          <div class="masonry-img" style="--h: 300px;"><img src="img/kampus1.jpg" alt="Campus"></div>
+          <div class="masonry-overlay"><span>Campus</span><h3>UNITY - Techo Fest 2025</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Campus" data-src="img/kampus2.jpg">
+          <div class="masonry-img" style="--h: 400px;"><img src="img/kampus2.jpg" alt="Campus"></div>
+          <div class="masonry-overlay"><span>Campus</span><h3>UNITY - Techo Fest 2025</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Campus" data-src="img/kampus3.jpg">
+          <div class="masonry-img" style="--h: 320px;"><img src="img/kampus3.jpg" alt="Campus"></div>
+          <div class="masonry-overlay"><span>Campus</span><h3>UNITY - Sosialisasi Panti Asuhan</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Campus" data-src="img/kampus4.JPG">
+          <div class="masonry-img" style="--h: 280px;"><img src="img/kampus4.JPG" alt="Campus"></div>
+          <div class="masonry-overlay"><span>Campus</span><h3>BTFT - SDI 2025</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Campus" data-src="img/kampus5.jpg">
+          <div class="masonry-img" style="--h: 350px;"><img src="img/kampus5.jpg" alt="Campus"></div>
+          <div class="masonry-overlay"><span>Campus</span><h3>MAHKOTA - Diskusi bersama</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Campus" data-src="img/kampus6.jpg">
+          <div class="masonry-img" style="--h: 310px;"><img src="img/kampus6.jpg" alt="Campus"></div>
+          <div class="masonry-overlay"><span>Campus</span><h3>UNITY - Divisi Teknis</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Campus" data-src="img/kampus7.jpg">
+          <div class="masonry-img" style="--h: 310px;"><img src="img/kampus7.jpg" alt="Campus"></div>
+          <div class="masonry-overlay"><span>Campus</span><h3>Sistem Informasi A</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Campus" data-src="img/kampus8.jpg">
+          <div class="masonry-img" style="--h: 310px;"><img src="img/kampus8.jpg" alt="Campus"></div>
+          <div class="masonry-overlay"><span>Campus</span><h3>Arsitektur dan Organisasi Komputer A</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Campus" data-src="img/kampus9.jpg">
+          <div class="masonry-img" style="--h: 310px;"><img src="img/kampus9.jpg" alt="Campus"></div>
+          <div class="masonry-overlay"><span>Campus</span><h3>Praktikum Teknologi Basis Data A</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Campus" data-src="img/kampus10.jpg">
+          <div class="masonry-img" style="--h: 310px;"><img src="img/kampus10.jpg" alt="Campus"></div>
+          <div class="masonry-overlay"><span>Campus</span><h3>MAHKOTA - Maskena 2025</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Campus" data-src="img/kampus11.jpg">
+          <div class="masonry-img" style="--h: 310px;"><img src="img/kampus11.jpg" alt="Campus"></div>
+          <div class="masonry-overlay"><span>Campus</span><h3>Diskusi</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Campus" data-src="img/kampus12.jpg">
+          <div class="masonry-img" style="--h: 310px;"><img src="img/kampus12.jpg" alt="Campus"></div>
+          <div class="masonry-overlay"><span>Campus</span><h3>BTFT - Angkatan 2024</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Campus" data-src="img/kampus13.JPG">
+          <div class="masonry-img" style="--h: 310px;"><img src="img/kampus13.JPG" alt="Campus"></div>
+          <div class="masonry-overlay"><span>Campus</span><h3>BTFT - Panitia SDI</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Campus" data-src="img/kampus14.jpg">
+          <div class="masonry-img" style="--h: 310px;"><img src="img/kampus14.jpg" alt="Campus"></div>
+          <div class="masonry-overlay"><span>Campus</span><h3>MAHKOTAA - Family</h3></div>
+        </div>
+        
+
+        <!-- Galerry Friend  -->
+        <div class="masonry-item" data-category="Friends" data-src="img/friend1.jpg">
+          <div class="masonry-img" style="--h: 320px;"><img src="img/friend1.jpg" alt="Friends"></div>
+          <div class="masonry-overlay"><span>Friends</span><h3>Gacoan Life</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Friends" data-src="img/friend2.jpg">
+          <div class="masonry-img" style="--h: 320px;"><img src="img/friend2.jpg" alt="Friends"></div>
+          <div class="masonry-overlay"><span>Friends</span><h3>Bluereactor love</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Friends" data-src="img/friend3.jpg">
+          <div class="masonry-img" style="--h: 320px;"><img src="img/friend3.jpg" alt="Friends"></div>
+          <div class="masonry-overlay"><span>Friends</span><h3>GLO</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Friends" data-src="img/friend4.jpg">
+          <div class="masonry-img" style="--h: 320px;"><img src="img/friend4.jpg" alt="Friends"></div>
+          <div class="masonry-overlay"><span>Friends</span><h3>Cantikku</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Friends" data-src="img/friend5.jpg">
+          <div class="masonry-img" style="--h: 320px;"><img src="img/friend5.jpg" alt="Friends"></div>
+          <div class="masonry-overlay"><span>Friends</span><h3>Bluereactor part 2</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Friends" data-src="img/friend6.jpg">
+          <div class="masonry-img" style="--h: 320px;"><img src="img/friend6.jpg" alt="Friends"></div>
+          <div class="masonry-overlay"><span>Friends</span><h3>L sayang</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Friends" data-src="img/friend7.jpg">
+          <div class="masonry-img" style="--h: 320px;"><img src="img/friend7.jpg" alt="Friends"></div>
+          <div class="masonry-overlay"><span>Friends</span><h3>High School Friends</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Friends" data-src="img/friend8.jpg">
+          <div class="masonry-img" style="--h: 320px;"><img src="img/friend8.jpg" alt="Friends"></div>
+          <div class="masonry-overlay"><span>Friends</span><h3>Med-eVTOL circle</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Friends" data-src="img/friend9.jpg">
+          <div class="masonry-img" style="--h: 320px;"><img src="img/friend9.jpg" alt="Friends"></div>
+          <div class="masonry-overlay"><span>Friends</span><h3>Machine Learning ASAP</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Friends" data-src="img/friend10.jpg">
+          <div class="masonry-img" style="--h: 320px;"><img src="img/friend10.jpg" alt="Friends"></div>
+          <div class="masonry-overlay"><span>Friends</span><h3>TKTI for life</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Friends" data-src="img/friend11.jpg">
+          <div class="masonry-img" style="--h: 320px;"><img src="img/friend11.jpg" alt="Friends"></div>
+          <div class="masonry-overlay"><span>Friends</span><h3>Cantikku part 2</h3></div>
+        </div>
+
+        <div class="masonry-item" data-category="Friends" data-src="img/friend12.jpg">
+          <div class="masonry-img" style="--h: 320px;"><img src="img/friend12.jpg" alt="Friends"></div>
+          <div class="masonry-overlay"><span>Friends</span><h3>Partner Kopken</h3></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Tampilan foto">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Tutup">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Sebelumnya">‹</button>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Berikutnya">›</button>
+    <div class="lightbox-content">
+      <div class="lightbox-img-wrap" id="lightboxImgWrap"></div>
+      <div class="lightbox-info">
+        <h3 id="lightboxTitle"></h3>
+        <p id="lightboxDesc"></p>
+      </div>
+    </div>
+  </div>
+  <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">Nurhidayah R<span class="dot">.</span></span>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-links">
+            <a href="https://instagram.com/nurhidayahramadhanii" aria-label="Instagram" class="social-icon">
+              <i data-feather="instagram"></i>
+            </a>
+            <a href="https://linkedin.com/in/nurhidayah-ramadhani-11189633a" aria-label="LinkedIn" class="social-icon">
+              <i data-feather="linkedin"></i>
+            </a>
+            <a href="https://github.com/daya022-ui" aria-label="GitHub" class="social-icon">
+              <i data-feather="github"></i>
+            </a>
+            <a href="https://facebook.com/nurhidayah.ramadhani.2025" aria-label="Facebook" class="social-icon">
+              <i data-feather="facebook"></i>
+            </a>
+          </div>
+        </div>
+      <p class="footer-copy">&copy; 2026 Nurhidayah Ramadhani. Dibuat dengan ♥</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+  feather.replace();
+</script>
+</body>
+</html>

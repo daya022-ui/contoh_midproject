@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nurhidayah · Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">NR<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <!-- 1. Weather Widget -->
+        <div id="weather-widget" class="weather-mini">
+          <span id="weather-temp">--°C</span>
+        </div>
+
+        <!-- 2. Dark Mode Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+          <span class="theme-icon">☾</span>
+        </button>
+
+        <!-- 3. Hamburger Menu (Mobile) -->
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow reveal">Halo, saya</p>
+      <h1 class="hero-name reveal delay-1">NURHIDAYAH<br /><em>RAMADHANI</em></h1>
+      <p class="hero-tagline reveal delay-2 typing-target"></p>
+      <div class="hero-cta reveal delay-3">
+        <a href="gallery.html" class="btn btn-primary">Lihat Karya</a>
+        <a href="contact.html" class="btn btn-outline">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap reveal">
+        <div class="about-img-placeholder" style="background: none;"> <div class="img-decoration"></div>
+          <img src="img/Nurhidayah.jpg" alt="Nurhidayah" style="width: 100%; height: 100%; object-fit: cover; border-radius: var(--radius-lg); position: relative; z-index: 2;">
+        </div>
+      </div>
+      
+      <div class="about-text reveal delay-1">
+        <span class="section-label">Tentang Saya</span>
+        <h2 class="section-title">Software Engineer &amp; AI Enthusiast</h2>
+        <p>Saya seorang pengembang perangkat lunak yang memiliki ketertarikan mendalam dalam membangun sistem cerdas. Saat ini, saya sedang mendalami bidang Machine Learning dan Deep Learning untuk menciptakan solusi berbasis data yang efisien.</p>
+        <p>Berfokus pada pengembangan backend dan pemrosesan data, saya terus bereksperimen dengan model-model AI untuk memahami bagaimana teknologi dapat membantu memecahkan masalah kompleks.</p>
+        <div class="about-chips">
+          <span class="chip">Machine/Deep Learning</span>
+          <span class="chip">Web Development</span>
+          <span class="chip">Backend</span>
+          <span class="chip">Data Analysis</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <section class="featured section" id="featured">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">Karya Terbaru</span>
+        <h2 class="section-title">Project Pilihan</h2>
+      </div>
+      
+      <div class="work-grid">
+        <div class="work-card reveal">
+          <div class="work-thumb">
+            <img src="img/Project_1.png" alt="Klasifikasi Kerusakan Dinding" style="width: 100%; height: 100%; object-fit: cover;">
+            <span class="work-num" style="background: var(--accent); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.7rem; bottom: 1rem; left: 1rem;">IN PROGRESS</span>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">Deep Learning / Research</span>
+            <h3>Klasifikasi Kerusakan Dinding</h3>
+            <p>Studi komparatif kinerja ResNet-50, EfficientNet-B0, dan MobileNetV3 dalam deteksi kerusakan bangunan melalui citra digital.</p>
+            <a href="gallery.html" class="work-link">Lihat Riset →</a>
+          </div>
+        </div>
+
+        <div class="work-card reveal delay-1">
+          <div class="work-thumb">
+            <img src="img/Project_2.png" alt="Analisis Ikan Tuna" style="width: 100%; height: 100%; object-fit: cover;">
+            <span class="work-num">02</span>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">Machine Learning / Random Forest</span>
+            <h3>Prediksi Tangkapan Ikan Tuna</h3>
+            <p>Analisis data produksi perikanan di Sulawesi Utara untuk optimalisasi pemantauan stok menggunakan algoritma Random Forest.</p>
+            <a href="gallery.html" class="work-link">Lihat Jurnal →</a>
+          </div>
+        </div>
+
+        <div class="work-card reveal delay-2">
+          <div class="work-thumb">
+            <img src="img/Project_3.png" alt="Smart Ocean IoT" style="width: 100%; height: 100%; object-fit: cover;">
+            <span class="work-num">03</span>
+          </div>
+          <div class="work-info">
+            <span class="work-tag">IoT & Embedded System</span>
+            <h3>Smart Ocean: Monitoring Air Laut</h3>
+            <p>Pengembangan sistem IoT untuk pemantauan kualitas air laut secara real-time yang didokumentasikan dalam bentuk E-book.</p>
+            <a href="gallery.html" class="work-link">Lihat Proyek →</a>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 3rem;" class="reveal delay-3">
+        <a href="gallery.html" class="btn btn-outline">Lihat Semua Proyek (9)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BANNER -->
+
+  <section class="cta-banner section">
+    <div class="container">
+      <div class="cta-inner reveal">
+        <span class="section-label">Mari Berkolaborasi</span>
+        <h2>Ada proyek yang ingin<br /><em>kita wujudkan bersama?</em></h2>
+        <a href="contact.html" class="btn btn-primary btn-lg">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quotes Random -->
+  <section class="quote-section">
+    <div class="container">
+      <div class="quote-wrapper">
+        <p id="quote-text">"The only way to do great work is to love what you do."</p>
+        <span id="quote-author">- Steve Jobs</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer"> ... </footer>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-logo">Nurhidayah R<span class="dot">.</span></span>
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-links">
+            <a href="https://instagram.com/nurhidayahramadhanii" aria-label="Instagram" class="social-icon">
+              <i data-feather="instagram"></i>
+            </a>
+            <a href="https://linkedin.com/in/nurhidayah-ramadhani-11189633a" aria-label="LinkedIn" class="social-icon">
+              <i data-feather="linkedin"></i>
+            </a>
+            <a href="https://github.com/daya022-ui" aria-label="GitHub" class="social-icon">
+              <i data-feather="github"></i>
+            </a>
+            <a href="https://facebook.com/nurhidayah.ramadhani.2025" aria-label="Facebook" class="social-icon">
+              <i data-feather="facebook"></i>
+            </a>
+          </div>
+        </div>
+      <p class="footer-copy">&copy; 2026 Nurhidayah Ramadhani. Dibuat dengan ♥</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script>
+  feather.replace();
+</script>
+</body>
+</html>
