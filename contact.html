@@ -3,9 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-    * { cursor: none !important; }
-  </style>
   <title>Contact · Nurhidayah Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,13 +25,15 @@
         <li><a href="contact.html" class="nav-link active">Contact</a></li>
       </ul>
       <div class="nav-actions">
-                <!-- 1. Weather Widget -->
+        <!-- 1. Weather Widget -->
         <div id="weather-widget" class="weather-mini">
           <span id="weather-temp">--°C</span>
         </div>
+        <!-- 2. Dark Mode Toggle -->
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
           <span class="theme-icon">☾</span>
         </button>
+        <!-- 3. Hamburger Menu (Mobile) -->
         <button class="hamburger" id="hamburger" aria-label="Menu">
           <span></span><span></span><span></span>
         </button>
@@ -46,13 +45,51 @@
   <header class="page-header">
     <div class="container">
       <span class="section-label reveal">Mari Terhubung</span>
-      <h1 class="page-title reveal delay-1">Contact</h1>
-      <p class="page-subtitle reveal delay-2">Mari berkolaborasi di dunia Teknologi</p>
+      <h1 class="page-title reveal delay-1">Get in Touch
+        <img src="img/daun1.png" alt="" class="contact-deco">
+      </h1>
+      <p class="page-subtitle reveal delay-2">Mari terhubung dan berkolaborasi di dunia Teknologi</p>
     </div>
   </header>
 
+  <!-- CONTACT -->
 <section class="contact section">
     <div class="container">
+
+      <!-- PROFILE CARD  -->
+    <div class="profile-card reveal">
+      <div class="profile-photo-wrap">
+        <img src="img/Nur.jpeg" alt="Nurhidayah" class="profile-photo">
+      </div>
+      <div class="profile-info">
+        <h2 class="profile-name">Nurhidayah Ramadhani</h2>
+        <div class="profile-details">
+          <div class="profile-row">
+            <span class="profile-label">NIM</span>
+            <span class="profile-value">240211060076</span>
+          </div>
+          <div class="profile-row">
+            <span class="profile-label">Program Studi</span>
+            <span class="profile-value">Teknik Informatika</span>
+          </div>
+          <div class="profile-row">
+            <span class="profile-label">Universitas</span>
+            <span class="profile-value">Universitas Sam Ratulangi</span>
+          </div>
+          <div class="profile-row">
+            <span class="profile-label">Angkatan</span>
+            <span class="profile-value">2024</span>
+          </div>
+        </div>
+        <div class="profile-skills">
+          <span class="chip">Python</span>
+          <span class="chip">Machine Learning</span>
+          <span class="chip">Web Development</span>
+          <span class="chip">IoT</span>
+        </div>
+      </div>
+    </div>
+
       <div class="contact-grid reveal">
         
         <div class="contact-item">
@@ -89,7 +126,7 @@
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- FOOTER  -->
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">

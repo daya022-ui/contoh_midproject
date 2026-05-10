@@ -1,13 +1,6 @@
-/* ============================================================
-   MAIN.JS — Nurhidayah Portfolio
-   Fix: Hamburger menu mobile + Navbar scroll + semua fitur
-   ============================================================ */
-
 document.addEventListener('DOMContentLoaded', () => {
 
-  /* ─────────────────────────────────────────
-     1. HAMBURGER MENU (FIX UTAMA)
-  ───────────────────────────────────────── */
+  /* 1. HAMBURGER MENU */
   const hamburger = document.getElementById('hamburger');
   const navLinks  = document.getElementById('navLinks');
 
@@ -15,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.classList.add('open');
     hamburger.classList.add('open');
     hamburger.setAttribute('aria-expanded', 'true');
-    document.body.style.overflow = 'hidden'; // cegah scroll saat menu terbuka
+    document.body.style.overflow = 'hidden'; 
   }
 
   function closeMenu() {
@@ -26,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   if (hamburger && navLinks) {
-    // Klik hamburger = toggle menu
     hamburger.addEventListener('click', (e) => {
       e.stopPropagation();
       if (navLinks.classList.contains('open')) {
@@ -36,12 +28,10 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Klik salah satu link = tutup menu
     navLinks.querySelectorAll('.nav-link').forEach(link => {
       link.addEventListener('click', closeMenu);
     });
 
-    // Klik di luar navbar = tutup menu
     document.addEventListener('click', (e) => {
       const navbar = document.getElementById('navbar');
       if (navLinks.classList.contains('open') && navbar && !navbar.contains(e.target)) {
@@ -49,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Tekan Escape = tutup menu
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && navLinks.classList.contains('open')) {
         closeMenu();
@@ -57,9 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  /* ─────────────────────────────────────────
-     2. NAVBAR SCROLL EFFECT
-  ───────────────────────────────────────── */
+  /* 2. NAVBAR SCROLL EFFECT */
   const navbar = document.getElementById('navbar');
 
   function handleScroll() {
@@ -72,16 +59,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('scroll', handleScroll, { passive: true });
-  handleScroll(); // jalankan sekali saat load
+  handleScroll(); 
 
-  /* ─────────────────────────────────────────
-     3. DARK MODE
-  ───────────────────────────────────────── */
+  /* 3. DARK MODE */
   const html = document.documentElement;
   const themeToggle = document.getElementById('themeToggle');
   const STORAGE_KEY = 'nr-theme';
 
-  // Baca preferensi tersimpan atau sistem
   const saved      = localStorage.getItem(STORAGE_KEY);
   const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   let isDark = saved ? (saved === 'dark') : prefersDark;
@@ -100,9 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     themeToggle.addEventListener('click', () => applyTheme(!isDark));
   }
 
-  /* ─────────────────────────────────────────
-     4. SCROLL REVEAL
-  ───────────────────────────────────────── */
+  /* 4. SCROLL REVEAL */
   const revealEls = document.querySelectorAll('.reveal');
 
   if (revealEls.length) {
@@ -118,7 +100,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
       revealEls.forEach(el => obs.observe(el));
     } else {
-      // Fallback browser lama
+
       function revealFallback() {
         revealEls.forEach(el => {
           const top = el.getBoundingClientRect().top;
@@ -132,9 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 
-  /* ─────────────────────────────────────────
-     5. TYPING ANIMATION  (index.html)
-  ───────────────────────────────────────── */
+  /* 5. TYPING ANIMATION (index.html) */
   const typingTarget = document.querySelector('.typing-target');
   if (typingTarget) {
     const phrases = ['Software Engineer.', 'BackEnd Developer.', 'AI Enthusiast.'];
@@ -168,9 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
     setTimeout(typeLoop, 600);
   }
 
-  /* ─────────────────────────────────────────
-     6. GALLERY FILTER  (gallery.html)
-  ───────────────────────────────────────── */
+  /* 6. GALLERY FILTER (gallery.html) */
   const filterBtns   = document.querySelectorAll('.filter-btn');
   const masonryItems = document.querySelectorAll('.masonry-item');
 
@@ -198,9 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  /* ─────────────────────────────────────────
-     7. LIGHTBOX  (gallery.html)
-  ───────────────────────────────────────── */
+  /* 7. LIGHTBOX (gallery.html) */
   let currentIdx   = 0;
   let visibleItems = [];
 
@@ -286,9 +262,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }, { passive: true });
 
-  /* ─────────────────────────────────────────
-     8. WEATHER (AJAX)  — index.html
-  ───────────────────────────────────────── */
+  /* 8. WEATHER (AJAX) index.html */
   const tempEl = document.getElementById('weather-temp');
   if (tempEl) {
     const API_KEY = '457b71f4611fb73fcd91272cc2b1b654';
@@ -308,9 +282,7 @@ document.addEventListener('DOMContentLoaded', () => {
       });
   }
 
-  /* ─────────────────────────────────────────
-     9. RANDOM QUOTE (AJAX)  — index.html
-  ───────────────────────────────────────── */
+  /* 9. RANDOM QUOTE (AJAX) index.html */
   const quoteTextEl   = document.getElementById('quote-text');
   const quoteAuthorEl = document.getElementById('quote-author');
 
@@ -334,9 +306,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const quoteBtn = document.getElementById('new-quote-btn');
   quoteBtn?.addEventListener('click', fetchQuote);
 
-/* ─────────────────────────────────────────
-   10. CUSTOM CURSOR
-───────────────────────────────────────── */
+/* 10. CUSTOM CURSOR */
 const cursor = document.getElementById('custom-cursor');
 if (cursor) {
   document.addEventListener('mousemove', (e) => {
@@ -344,16 +314,14 @@ if (cursor) {
     cursor.style.top  = e.clientY + 'px';
   });
 
-  // Efek saat hover elemen klikable (opsional)
   const clickables = document.querySelectorAll('a, button, [role="button"]');
   clickables.forEach(el => {
     el.addEventListener('mouseenter', () => cursor.style.transform = 'translate(-50%, -50%) scale(1.3)');
     el.addEventListener('mouseleave', () => cursor.style.transform = 'translate(-50%, -50%) scale(1)');
   });
 
-  // Sembunyikan saat cursor keluar jendela
   document.addEventListener('mouseleave', () => cursor.style.opacity = '0');
   document.addEventListener('mouseenter', () => cursor.style.opacity = '1');
 }
   
-}); // end DOMContentLoaded
+}); 

@@ -14,6 +14,7 @@
   <!-- Cursor -->
   <div id="custom-cursor"></div>
 
+  <!-- NAVBAR -->
   <nav class="navbar" id="navbar">
     <div class="nav-container">
       <a href="index.html" class="nav-logo">NR<span class="dot">.</span></a>
@@ -24,13 +25,15 @@
         <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
       <div class="nav-actions">
-                <!-- 1. Weather Widget -->
+        <!-- 1. Weather Widget -->
         <div id="weather-widget" class="weather-mini">
           <span id="weather-temp">--°C</span>
         </div>
+        <!-- 2. Dark Mode Toggle -->
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
           <span class="theme-icon">☾</span>
         </button>
+        <!-- 3. Hamburger Menu (Mobile) -->
         <button class="hamburger" id="hamburger" aria-label="Menu">
           <span></span><span></span><span></span>
         </button>
@@ -38,16 +41,22 @@
     </div>
   </nav>
 
+  <!-- PAGE HEADER -->
   <header class="page-header">
     <div class="container">
       <span class="section-label reveal">Pikiran &amp; Cerita</span>
-      <h1 class="page-title reveal delay-1">Blog</h1>
-      <p class="page-subtitle reveal delay-2">Menulis tentang desain, teknologi, dan perjalanan hidup</p>
+      <h1 class="page-title reveal delay-1">Blog
+        <img src="img/daun2.png" alt="" class="blog-deco">
+      </h1>
+      <p class="page-subtitle reveal delay-2">A collection of articles, tutorials, and visual stories.</p>
     </div>
   </header>
+  
+<!-- BLOG -->
 <section class="blog-section section">
   <div class="container">
     
+    <!-- ARTICLE FEATURED -->
     <article class="article-featured reveal" data-tags='["AI", "Tech"]'>
       <div class="featured-content">
         <div class="featured-text">
@@ -67,6 +76,7 @@
 
     <hr class="section-divider">
 
+    <!-- ARTICLE MINIMAL -->
     <article class="article-minimal reveal" data-tags='["AI", "Life"]'>
       <div class="minimal-content">
         <span class="category-label">Education</span>
@@ -76,6 +86,7 @@
       </div>
     </article>
 
+    <!-- VIDEO HIGHLIGHT -->
     <div class="video-featured-wrap reveal">
       <div class="video-info">
         <h3>Video Highlight: Roadmap to Machine Learning</h3>
@@ -83,16 +94,17 @@
       </div>
       <div class="video-responsive">
         <iframe 
-            src="https://www.youtube.com/embed/7IgVGSaQPaw" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-            allowfullscreen>
-          </iframe>
+          src="https://www.youtube.com/embed/4Ey8GPSuVgY"
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen>
+        </iframe>
       </div>
     </div>
 
     <hr class="section-divider">
 
+    <!-- ARTICLE CARDS -->
     <div class="articles-sub-grid">
       
       <article class="article-card reveal" data-tags='["Tech"]'>
@@ -135,6 +147,7 @@
   </div>
 </section>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-inner">

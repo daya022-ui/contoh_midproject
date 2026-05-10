@@ -3,9 +3,6 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <style>
-    * { cursor: none !important; }
-  </style>
   <title>Gallery · Nurhidayah Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,12 +25,15 @@
         <li><a href="contact.html" class="nav-link">Contact</a></li>
       </ul>
       <div class="nav-actions">
+        <!-- 1. Weather Widget -->
         <div id="weather-widget" class="weather-mini">
           <span id="weather-temp">--°C</span>
         </div>
+        <!-- 2. Dark Mode Toggle -->
         <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
           <span class="theme-icon">☾</span>
         </button>
+        <!-- 3. Hamburger Menu (Mobile) -->
         <button class="hamburger" id="hamburger" aria-label="Menu">
           <span></span><span></span><span></span>
         </button>
@@ -42,15 +42,18 @@
   </nav>
 
   <!-- PAGE HEADER -->
-  <header class="page-header">
-    <div class="container">
-      <span class="section-label reveal">Koleksi Visual</span>
+<header class="page-header">
+  <div class="container">
+    <span class="section-label reveal">Koleksi Visual</span>
+    <div class="page-title-wrap">
       <h1 class="page-title reveal delay-1">Gallery</h1>
-      <p class="page-subtitle reveal delay-2">Momen, proyek, dan perspektif dalam satu frame</p>
+      <img src="img/daun3.png" alt="" class="gallery-deco">
     </div>
-  </header>
+    <p class="page-subtitle reveal delay-2"><em>Momen, proyek, dan perspektif dalam satu frame</em></p>
+  </div>
+</header>
 
-  <!-- FILTER BAR -->
+  <!-- GALLERY -->
   <section class="gallery-section section">
     <div class="container">
       <div class="filter-bar reveal">
@@ -63,14 +66,14 @@
       <!-- MASONRY GRID -->
       <div class="masonry-grid" id="masonryGrid">
 
-        <!-- Galerry Project -->
-        <div class="masonry-item" data-category="Project" data-src="img/Project_1.png" data-desc="Mendeteksi kerusakan pada dinding bangunan seperti dinding rusak, berjamur dan berlumur, noda, retak, dan cat terkelupas menggunakan 3 Arsitektur CNN (Convolutional Neural Network) yaitu Resnet-50, EfficientNet-B0, dan MobileNetV3-Large.">
-          <div class="masonry-img" style="--h: 320px;"><img src="img/Project_1.png" alt="Deep Learning"></div>
+        <!-- PROJECT -->
+        <div class="masonry-item" data-category="Project" data-src="img/Project_1.jpg" data-desc="Mendeteksi kerusakan pada dinding bangunan seperti dinding rusak, berjamur dan berlumur, noda, retak, dan cat terkelupas menggunakan 3 Arsitektur CNN (Convolutional Neural Network) yaitu Resnet-50, EfficientNet-B0, dan MobileNetV3-Large.">
+          <div class="masonry-img" style="--h: 320px;"><img src="img/Project_1.jpg" alt="Deep Learning"></div>
           <div class="masonry-overlay"><span>Project</span><h3>Deep Learning</h3></div>
         </div>
 
-        <div class="masonry-item" data-category="Project" data-src="img/Project_2.png" data-desc="Menganalisis data tangkapan dan budidaya ikan tuna di daerah Sulawesi Utara untuk memonitoring produksi penangkapan dan budidaya ikan tuna.">
-          <div class="masonry-img" style="--h: 300px;"><img src="img/Project_2.png" alt="Machine Learning"></div>
+        <div class="masonry-item" data-category="Project" data-src="img/Project_2.jpg" data-desc="Menganalisis data tangkapan dan budidaya ikan tuna di daerah Sulawesi Utara untuk memonitoring produksi penangkapan dan budidaya ikan tuna.">
+          <div class="masonry-img" style="--h: 300px;"><img src="img/Project_2.jpg" alt="Machine Learning"></div>
           <div class="masonry-overlay"><span>Project</span><h3>Machine Learning</h3></div>
         </div>
 
@@ -109,7 +112,7 @@
           <div class="masonry-overlay"><span>Project</span><h3>Internet of Things</h3></div>
         </div>
         
-        <!-- Galerry Organisasi  -->
+        <!-- CAMPUS LIFE -->
         <div class="masonry-item" data-category="Campus" data-src="img/kampus1.jpg">
           <div class="masonry-img" style="--h: 300px;"><img src="img/kampus1.jpg" alt="Campus"></div>
           <div class="masonry-overlay"><span>Campus</span><h3>UNITY - Techo Fest 2025</h3></div>
@@ -181,7 +184,7 @@
         </div>
         
 
-        <!-- Galerry Friend  -->
+        <!-- FRIENDS -->
         <div class="masonry-item" data-category="Friends" data-src="img/friend1.jpg">
           <div class="masonry-img" style="--h: 320px;"><img src="img/friend1.jpg" alt="Friends"></div>
           <div class="masonry-overlay"><span>Friends</span><h3>Gacoan Life</h3></div>
